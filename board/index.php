@@ -49,7 +49,7 @@
           }
           else{
 ?>
-            <button onclick="location.href='login.php'">로그인해주세요</button>
+            <button onclick="location.href='login.html'">로그인해주세요</button>
             <br></br>
 <?php
           }

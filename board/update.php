@@ -32,7 +32,7 @@
       <label for="message">메시지:</label>
       <textarea name="message" id="message" cols="30" rows="10"><?= $row['message'] ?></textarea>
     </p>
-    <input type="submit" value="글쓰기">
+    <input type="submit" value="글수정">
   </form>
 <?php
 }

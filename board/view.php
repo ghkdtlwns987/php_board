@@ -36,7 +36,7 @@
         else{
             echo "로그인 상태가 아닙니다";
 ?>
-            <button onclick="location.href='login.php'">로그인해주세요</button>
+            <button onclick="location.href='login.html'">로그인해주세요</button>
             <h1>게시판</h1>
             <h2>글 내용</h2>
             <?php
