@@ -13,7 +13,7 @@
     </p>
     <p>
       <label for="message">메시지:</label>
-      <textarea name="message" id="message" cols="30" rows="10"></textarea>
+      <textarea name="message" id="message" cols="30" rows="10" maxlength="10"></textarea>
     </p>
     <input type="submit" value="글쓰기">
   </form>

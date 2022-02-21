@@ -16,7 +16,7 @@
         echo "db 에 연결하지 못했습니다.".mysqli_connect_error();
       }
       else{
-          echo "db 에 접속했습니다.\n";
+          #echo "db 에 접속했습니다.\n";
 
           if(isset($_SESSION['id'])) {
             echo $_SESSION['id']; echo "님 안녕하세요";
@@ -45,12 +45,13 @@
               </p>
               <input type="submit" value="삭제">
             </form>
-  <?php
+<?php
           }
           else{
-  ?>
-            <a href="login.html">로그인해주세요</a> <br>
-            <?php
+?>
+            <button onclick="location.href='login.php'">로그인해주세요</button>
+            <br></br>
+<?php
           }
         }
         $sql = "SELECT * FROM msg_board";

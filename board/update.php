@@ -4,11 +4,11 @@
     echo "db 에 연결하지 못했습니다.".mysqli_connect_error();
     }
     else{
-        echo "db 에 접속했습니다.";
+        #echo "db 에 접속했습니다.";
+        $view_num = $_GET['number'];
+        $sql = "SELECT * FROM msg_board WHERE number = $view_num" ;
+        $result = mysqli_query($conn, $sql);
     }
-    $view_num = $_GET['number'];
-    $sql = "SELECT * FROM msg_board WHERE number = $view_num" ;
-    $result = mysqli_query($conn, $sql);
 
 ?>
 <!DOCTYPE html>
