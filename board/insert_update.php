@@ -5,7 +5,7 @@
   <title>insert</title>
 </head>
 <body>
-  <?php
+<?php
   $conn = mysqli_connect("127.0.0.1:3306", "root", "sese3355", "abc_corp");
 
   if(!$conn) {

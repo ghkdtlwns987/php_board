@@ -8,8 +8,6 @@
         $view_num = $_GET['number'];
         $sql = "SELECT * FROM msg_board WHERE number = $view_num" ;
         $result = mysqli_query($conn, $sql);
-    }
-
 ?>
 <!DOCTYPE html>
 <html>
@@ -24,6 +22,9 @@
 ?> 
   <form action="insert_update.php" method="post">
     <input type="hidden" name="number" value="<?= $view_num ?>">
+    <p>작성자</p>
+      <input type="hidden" id="name" value="<?=$_SESSION['id']?>"><?=$_SESSION['id']?>
+    </p>
     <p>
       <label for="name">이름:</label>
       <input type="text" id="name" name="name" value="<?= $row['name'] ?>">
@@ -41,3 +42,7 @@ mysqli_close($conn);
 ?>
 </body>
 </html>
+<?php
+}
+?>
+
