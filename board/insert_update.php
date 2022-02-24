@@ -15,9 +15,6 @@
     $user_name = $_POST['name'];
     $user_msg = $_POST['message'];
   
-    print($user_name);
-    print($user_msg);
-  
     $sql = "UPDATE msg_board SET name = '$user_name', message = '$user_msg' WHERE number = $number";
     //mysqli_query($link, 'sql statement')
     $result = mysqli_query($conn, $sql);  
